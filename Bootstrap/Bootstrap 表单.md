@@ -25,3 +25,18 @@
 1、 向父`<form>`元素添加`class="form-horizontal"`
 2、 把**标签和控件**放在一个带有`class="form-group"`的`<div>`中
 3、 向**标签**添加`class="control-label"`
+
+## 静态控件
+
+* 当您需要在一个水平表单内的表单标签后放置纯文本时，请在 <p> 上使用 `class="form-control-static"`
+
+## 表单控件状态
+
+* `disabled`属性：禁用输入框
+* `<fieldset disabled>`：禁用的字段集`fieldset`
+* `class="has-warning"，class="has-error"，class="has-success"`：**父元素添加相应的class**，警告、错误、成功的验证样式。
+
+## 表单控件大小
+
+* `class="input-lg"`：表单的高度增高
+* `class="input-sm"`：表单的高度减小

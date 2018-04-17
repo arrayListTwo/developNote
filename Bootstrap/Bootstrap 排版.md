@@ -63,6 +63,24 @@
 
 <img src='example_image/font_design.jpg' alt="文字样式显示效果">
 
+## 背景
+<img src='example_image/bg-class.png' alt="背景显示效果">
+
+#### 示例：
+
+	```html
+	<p class="bg-primary">表格单元格使用了 "bg-primary" 类</p>
+	<p class="bg-success">表格单元格使用了 "bg-success" 类</p>
+	<p class="bg-info">表格单元格使用了 "bg-info" 类</p>
+	<p class="bg-warning">表格单元格使用了 "bg-warning" 类</p>
+	<p class="bg-danger">表格单元格使用了 "bg-danger" 类</p>
+	```
+
+#### 效果：
+
+<img src='example_image/bg-effect.jpg' alt="背景显示效果">
+
+
 ## 地址（Address）
 
 * 使用 `<address>` 标签，您可以在网页上显示联系信息。 `<address>` 默认为 `display:block`
@@ -96,3 +114,36 @@
 * `.text-lowercase`	设定文本小写
 * `.text-uppercase`	设定文本大写
 * `.text-capitalize`	设定单词首字母大写
+* `.pull-left`元素浮动到左边
+* `.pull-right`元素浮动到右边
+* `.center-block`设置元素为 `display:block` 并居中显示
+* `.clearfix`清除浮动
+	```html
+	<h1>clearfix清除浮动</h1>
+	<div class="clearfix"  style="background: #D8D8D8;border: 1px 	solid #000;padding: 10px;">
+		<div class="pull-left" style="background:#58D3F7;">
+      	向左快速浮动
+   		</div>
+   		<div class="pull-right" style="background: #DA81F5;">
+      	向右快速浮动
+   		</div>
+	</div>
+	```
+<img src="example_image/clearfix.jpg" alt="使用clearfix类，快速清除浮动">
+* `.show`强制显示元素 `display:block`
+* `.hidden`强制元素隐藏
+* `.text-hide`将页面元素所包含的文本内容替换为背景图
+* `.close`显示关闭按钮
+	```html
+	<p>关闭图标实例
+  		<button type="button" class="close" aria-hidden="true">
+   	 	&times;
+  		</button>
+	</p>
+	```
+* `.caret`显示下拉式功能
+	```html
+	<p>插入符实例
+		<span class="caret"></span>
+	</p>
+	```
