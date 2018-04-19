@@ -31,7 +31,8 @@
 </div>
 ```
 #### 效果
-<img src="example_image/btn-dropdown.png" alt="按钮下拉菜单简单效果">
+![](https://i.imgur.com/EiDhbpT.png)
+<!--<img src="example_image/btn-dropdown.png" alt="按钮下拉菜单简单效果">-->
 
 ## 分割的按钮下拉菜单
 
@@ -56,4 +57,5 @@
 </div>
 ```
 #### 效果
-<img src="example_image/btn-dropdown-splid.png" alt="分割按钮的下拉菜单效果">
+![](https://i.imgur.com/tHHta7V.png)
+<!--<img src="example_image/btn-dropdown-splid.png" alt="分割按钮的下拉菜单效果">-->

@@ -32,7 +32,8 @@
 </form>
 ```
 ##### 效果
-<img src="example_image/input-group-simple.png" alt="输入框组样式效果">
+![](https://i.imgur.com/pFsE584.png)
+<!--<img src="example_image/input-group-simple.png" alt="输入框组样式效果">-->
 
 ## 多选框和多选框
 
@@ -65,7 +66,8 @@
 </div>
 ```
 ##### 效果
-<img src="example_image/input-group-box.png" alt="多选框和单选框样式效果">
+![](https://i.imgur.com/6oAVFVU.png)
+<!--<img src="example_image/input-group-box.png" alt="多选框和单选框样式效果">-->
 
 ## 按钮插件
 
@@ -106,7 +108,8 @@
 </div>
 ```
 ##### 效果
-<img src="example_image/input-group-btn.png" alt="按钮作为附加元素的输入框组合">
+![](https://i.imgur.com/quPUXxo.png)
+<!--<img src="example_image/input-group-btn.png" alt="按钮作为附加元素的输入框组合">-->
 
 ## 带有下拉菜单的按钮
 
@@ -161,4 +164,5 @@
 </form>
 ```
 ##### 效果
-<img src="example_image/input-group-btn-sel.jpg" alt="带有下拉菜单的按钮的输入框组合">
+![](https://i.imgur.com/3GnBlwc.jpg)
+<!--<img src="example_image/input-group-btn-sel.jpg" alt="带有下拉菜单的按钮的输入框组合">-->

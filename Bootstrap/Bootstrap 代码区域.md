@@ -21,4 +21,5 @@
 
 #### 效果：
 
-<img src='example_image/code_design.jpg' alt="code显示效果">
+![](https://i.imgur.com/2zxdpO6.jpg)
+<!--<img src='example_image/code_design.jpg' alt="code显示效果">-->

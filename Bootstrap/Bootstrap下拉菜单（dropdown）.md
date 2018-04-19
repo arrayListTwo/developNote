@@ -28,7 +28,8 @@
 
 #### 效果
 
-<img src="example_image/dropdown-simple.jpg" alt="简单的下拉菜单示例">
+![](https://i.imgur.com/URtQ8S2.jpg)
+<!--<img src="example_image/dropdown-simple.jpg" alt="简单的下拉菜单示例">-->
 
 ## 选项
 
@@ -38,7 +39,8 @@
 
 ##### 效果
 
-<img src="example_image/dropdown-right.jpg" alt="菜单项向右对齐">
+![](https://i.imgur.com/yl2OeTT.jpg)
+<!--<img src="example_image/dropdown-right.jpg" alt="菜单项向右对齐">-->
 
 ### 标题和分割线
 
@@ -69,4 +71,6 @@
 </div>
 ```
 ##### 效果
-<img src="example_image/dropdown-header.jpg" alt="菜单项向右对齐">
+
+![](https://i.imgur.com/JknEcPb.jpg)
+<!--<img src="example_image/dropdown-header.jpg" alt="菜单项向右对齐">-->

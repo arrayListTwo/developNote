@@ -3,8 +3,8 @@
 > **Bootstrap**提供了清晰的创建表格的布局
 
 ## 标签如下：
-
-<img src='example_image/table-label.png' alt="code显示效果">
+![](https://i.imgur.com/8BBlXzj.png)
+<!--<img src='example_image/table-label.png' alt="code显示效果">-->
 
 ## 作用于**表格`<table>`**的**类class**
 
@@ -46,7 +46,8 @@
 
 #### 效果：
 
-<img src='example_image/table_design.jpg' alt="code显示效果">
+![](https://i.imgur.com/UOPEKMj.jpg)
+<!--<img src='example_image/table_design.jpg' alt="code显示效果">-->
 
 ## 响应式表格
 

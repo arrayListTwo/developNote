@@ -69,7 +69,8 @@
 
 #### 效果：
 
-<img src="example_image/gly-design.jpg" alt="字体图标效果">
+![](https://i.imgur.com/Z1Qxf5t.jpg)
+<!--<img src="example_image/gly-design.jpg" alt="字体图标效果">-->
 
 ## 定制字体图标 -- 字体图标的处理方式 等于 字体的处理方式
 
@@ -80,7 +81,8 @@
     <span class="glyphicon glyphicon-user"></span> User
 </button>
 ```
-<img src="example_image/gly-init.jpg" alt="初始字体图标">
+![](https://i.imgur.com/9DpSiDq.jpg)
+<!--<img src="example_image/gly-init.jpg" alt="初始字体图标">-->
 
 #### 定制字体图标尺寸
 
@@ -91,7 +93,8 @@
     <span class="glyphicon glyphicon-user"></span> User
 </button>
 ```
-<img src="example_image/gly-fontsize.jpg" alt="定制字体图标尺寸">
+![](https://i.imgur.com/67Z12fV.jpg)
+<!--<img src="example_image/gly-fontsize.jpg" alt="定制字体图标尺寸">-->
 
 #### 定制字体图标颜色
 
@@ -102,7 +105,8 @@
     <span class="glyphicon glyphicon-user"></span> User
 </button>
 ```
-<img src="example_image/gly-fontcolor.jpg" alt="定制字体图标颜色">
+![](https://i.imgur.com/TwKO721.jpg)
+<!--<img src="example_image/gly-fontcolor.jpg" alt="定制字体图标颜色">-->
 
 #### 应用文本阴影
 * 直接设置`text-shadow`属性值
@@ -112,4 +116,5 @@
     <span class="glyphicon glyphicon-user"></span> User
 </button>
 ```
-<img src="example_image/gly-fontshadow.jpg" alt="定制字体图标颜色">
+![](https://i.imgur.com/HpJPXOJ.jpg)
+<!--<img src="example_image/gly-fontshadow.jpg" alt="定制字体图标颜色">-->

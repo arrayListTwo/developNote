@@ -4,7 +4,8 @@
 
 ## 常用class总结
 
-<img src="example_image/btn-group.png" alt="按钮组常用class">
+![](https://i.imgur.com/1ktuZFq.png)
+<!--<img src="example_image/btn-group.png" alt="按钮组常用class">-->
 
 ## class="btn-group"
 
@@ -19,7 +20,8 @@
 
 ##### 效果
 
-<img src="example_image/btngroup-simple.png" alt="按钮组效果">
+![](https://i.imgur.com/OLlLPWt.png)
+<!--<img src="example_image/btngroup-simple.png" alt="按钮组效果">-->
 
 ## class="btn-toolbar'
 
@@ -41,8 +43,8 @@
 </div>
 ```
 ##### 效果
-
-<img src="example_image/btn-toolbar.png" alt="按钮工具栏按钮">
+![](https://i.imgur.com/YM3FZNo.png)
+<!--<img src="example_image/btn-toolbar.png" alt="按钮工具栏按钮">-->
 
 ## 嵌套
 
@@ -69,7 +71,8 @@
 </div>
 ```
 #### 效果
-<img src="example_image/btn-group-dropdown.png" alt="按钮嵌套实现下拉菜单效果">
+![](https://i.imgur.com/plliLqK.png)
+<!--<img src="example_image/btn-group-dropdown.png" alt="按钮嵌套实现下拉菜单效果">-->
 
 ## 垂直按钮组
 
@@ -92,4 +95,5 @@
 ```
 
 ##### 效果
-<img src="example_image/btn-group-vertical.png" alt="垂直按钮组效果">
+![](https://i.imgur.com/YM44Wir.png)
+<!--<img src="example_image/btn-group-vertical.png" alt="垂直按钮组效果">-->

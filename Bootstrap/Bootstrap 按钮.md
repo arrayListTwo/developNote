@@ -6,7 +6,8 @@
 
 **注：**以下样式可用于`<a>`、`<button>`、`<input>`元素
 
-<img src="example_image/btn-design.png" alt="按钮样式">
+![](https://i.imgur.com/6PleL4t.png)
+<!--<img src="example_image/btn-design.png" alt="按钮样式">-->
 
 #### 示例：
 	
@@ -42,6 +43,7 @@
 	<button type="button" class="btn btn-success btn-block">块级按钮</button>
 	```
 #### 效果：
-	
-<img src="example_image/btn-effect.jpg" alt="按钮样式效果">
+
+![](https://i.imgur.com/AzUqxuv.jpg)
+<!--<img src="example_image/btn-effect.jpg" alt="按钮样式效果">-->
 

@@ -21,7 +21,8 @@
 </ul>
 ```
 ##### 效果
-<img src="example_image/nav_tab.png" alt="标签式的导航菜单">
+![](https://i.imgur.com/XGDkHDa.png)
+<!--<img src="example_image/nav_tab.png" alt="标签式的导航菜单">-->
 
 ## 胶囊式的导航菜单
 
@@ -31,7 +32,8 @@
 
 ##### 效果
 
-<img src="example_image/nav-pills.png" alt="基本的胶囊式导航菜单">
+![](https://i.imgur.com/ido1Amy.png)
+<!--<img src="example_image/nav-pills.png" alt="基本的胶囊式导航菜单">-->
 
 ### 垂直的胶囊式导航菜单
 
@@ -39,7 +41,8 @@
 
 ##### 效果
 
-<img src="example_image/nav-pills-stacked.png" alt="垂直的胶囊式导航菜单">
+![](https://i.imgur.com/iQZZRek.png)
+<!--<img src="example_image/nav-pills-stacked.png" alt="垂直的胶囊式导航菜单">-->
 
 ## 下拉菜单
 
@@ -73,14 +76,16 @@
 ```
 ##### 效果
 
-<img src="example_image/nav-tabs-dropdown.png" alt="带有下拉菜单的标签式导航菜单">
+![](https://i.imgur.com/yP012JE.png)
+<!--<img src="example_image/nav-tabs-dropdown.png" alt="带有下拉菜单的标签式导航菜单">-->
 
 ### 带有下拉菜单的胶囊式导航菜单
 
 * 使用`.nav-pills`
 
 ##### 效果
-<img src="example_image/nav-pills-dropdown.png" alt="带有下拉菜单的胶囊式导航菜单">
+![](https://i.imgur.com/Uz6zjH3.png)
+<!--<img src="example_image/nav-pills-dropdown.png" alt="带有下拉菜单的胶囊式导航菜单">-->
 
 ## 随标签页切换、内容发生更改
 
@@ -122,4 +127,5 @@
 </div>
 ```
 ##### 效果
-<img src="example_image/nav-tab-content.png" alt="动态标签-随标签页的切换内容随之改变">
+![](https://i.imgur.com/AkKa7QN.png)
+<!--<img src="example_image/nav-tab-content.png" alt="动态标签-随标签页的切换内容随之改变">-->

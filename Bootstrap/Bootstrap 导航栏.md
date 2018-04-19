@@ -47,7 +47,8 @@
 </nav>
 ```
 ##### 效果：默认的导航栏非响应式的，在屏幕宽度 <= 780px 上会形成堆叠效果
-<img src="example_image/navbar-default.png" alt="默认的导航栏">
+![](https://i.imgur.com/a1fSSnF.png)
+<!--<img src="example_image/navbar-default.png" alt="默认的导航栏">-->
 
 ## 响应式的导航栏
 
@@ -96,7 +97,8 @@
 </nav>
 ```
 ##### 效果
-<img src="example_image/navbar-responsive.png" alt="响应式导航栏">
+![](https://i.imgur.com/IgxGbYs.png)
+<!--<img src="example_image/navbar-responsive.png" alt="响应式导航栏">-->
 
 ## 导航栏中的表单
 
@@ -120,7 +122,8 @@
 </nav>
 ```
 ##### 效果
-<img src="example_image/nav-form.png" alt="导航栏中的菜单">
+![](https://i.imgur.com/pL8eJwT.png)
+<!--<img src="example_image/nav-form.png" alt="导航栏中的菜单">-->
 
 ## 导航栏中的按钮
 
@@ -150,7 +153,8 @@
 </nav>
 ```
 ##### 效果
-<img src="example_image/nav-btn.png" alt="导航栏中的按钮">
+![](https://i.imgur.com/FDPWdLA.png)
+<!--<img src="example_image/nav-btn.png" alt="导航栏中的按钮">-->
 
 ## 导航栏中的文本
 * 导航中包含文本字符串，请使用 `.navbar-text`。这通常与 `<p>` 标签一起使用，确保适当的前导和颜色。
@@ -170,4 +174,88 @@
 </nav>
 ```
 ##### 效果
-<img src="example_image/nav-text.png" alt="导航栏中的文本">
+![](https://i.imgur.com/FXQ2b2w.png)
+<!--<img src="example_image/nav-text.png" alt="导航栏中的文本">-->
+
+## 结合图标的导航栏链接
+
+* 使用`class="glyphicon glyphicon-*"`来设置图标
+
+##### 示例
+```html
+<h2>结合图标的导航链接</h2>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Bootstrap</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+        </ul>
+    </div>
+</nav>
+```
+##### 效果
+![](https://i.imgur.com/wYuFwnN.png)
+<!--<img src="example_image/nav-gly.png" alt="结合图标的导航链接">-->
+
+## 组件对齐方式
+
+* 使用`.navbar-left`、`.navbar-right` 向左或向右对齐导航栏中的**导航链接**、**表单**、**按钮**、**文本**等组件
+* 在指定的方向上添加**CSS浮动**
+
+## 导航栏位置
+
+> `Bootstrap`导航栏可以动态定位。
+>
+> 默认情况下，它是块级元素，它是基于在HTML中放置的位置定位的
+>
+> 通过一些帮助器类，可以把它放置在页面的顶部或者底部，或者可以让它成为随着页面一起滚动的静态导航栏
+
+* **固定到顶部**：向添加`.navbar`的元素，再添加`.navbar-fix-top`
+	* 为了防止导航栏与页面主体中的其他内容的顶部相交错，可向`<body>`标签添加至少`50px`像素的内边距（`padding`）
+* **固定到底部**：向添加`.navbar`的元素，再添加`.navbar-fix-bottom`
+	* 为了防止导航栏与页面主体中的其他内容的底部相交错，可向`<body>`标签添加至少`50px`像素的内边距（`padding`）
+* **随着页面一起滚动的导航栏**：向添加`.navbar`的元素，再添加`.navbar-static-top`
+	* 该`class`不要求向`<body>`添加内边距
+
+## 反色的导航栏
+
+* 创建一个带有黑色背景、白色文本的反色导航栏，只需要简单地向添加`.navbar`的元素，再添加`.navbar-inverse`
+
+##### 示例
+```html
+<h2>反色的导航栏</h2>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Bootstrap</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">iOS</a></li>
+                <li><a href="#">SVN</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Java
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li><a href="#">EJB</a></li>
+                        <li><a href="#">Jasper Report</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">分离的链接</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+```
+##### 效果
+![](https://i.imgur.com/MXRKNxj.png)
+<!--<img src="example_image/nav-inverse.png" alt="反色的导航栏">-->

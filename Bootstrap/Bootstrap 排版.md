@@ -60,11 +60,12 @@
 	<p class="text-danger">本行内容带有一个 danger class</p>
 	```
 #### 效果：
-
-<img src='example_image/font_design.jpg' alt="文字样式显示效果">
+![](https://i.imgur.com/s9lVE6A.jpg)
+<!--<img src='example_image/font_design.jpg' alt="文字样式显示效果">-->
 
 ## 背景
-<img src='example_image/bg-class.png' alt="背景显示效果">
+![](https://i.imgur.com/HqFXLBW.png)
+<!--<img src='example_image/bg-class.png' alt="背景显示效果">-->
 
 #### 示例：
 
@@ -77,8 +78,8 @@
 	```
 
 #### 效果：
-
-<img src='example_image/bg-effect.jpg' alt="背景显示效果">
+![](https://i.imgur.com/1wf35Cr.jpg)
+<!--<img src='example_image/bg-effect.jpg' alt="背景显示效果">-->
 
 
 ## 地址（Address）
@@ -105,8 +106,8 @@
 	```
 
 #### 效果：
-
-<img src='example_image/Blockquote_design.jpg' alt="引用显示效果">
+![](https://i.imgur.com/vHyTyi9.jpg)
+<!--<img src='example_image/Blockquote_design.jpg' alt="引用显示效果">-->
 
 ## 更多
 
@@ -129,7 +130,8 @@
    		</div>
 	</div>
 	```
-<img src="example_image/clearfix.jpg" alt="使用clearfix类，快速清除浮动">
+![](https://i.imgur.com/PVIAiJ0.jpg)
+<!--<img src="example_image/clearfix.jpg" alt="使用clearfix类，快速清除浮动">-->
 * `.show`强制显示元素 `display:block`
 * `.hidden`强制元素隐藏
 * `.text-hide`将页面元素所包含的文本内容替换为背景图
