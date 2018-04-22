@@ -17,7 +17,7 @@
 #### 简单示例
 ```html
 <div class="btn-group">
-    <button type="button" class="btn btn-primary dropdown-toggle"
+    <button type="button" class="btn btn-priwmary dropdown-toggle"
             data-toggle="dropdown">原始
         <span class="caret"></span>
     </button>

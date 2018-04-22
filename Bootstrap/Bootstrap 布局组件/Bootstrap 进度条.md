@@ -54,7 +54,8 @@
 </div>
 ```
 ##### 效果
-<img src="example_image/progress-type.png" alt="进度条的显示效果">
+![](https://i.imgur.com/8WJQqti.png)
+<!--<img src="example_image/progress-type.png" alt="进度条的显示效果">-->
 
 ## 条纹的进度条
 
@@ -73,7 +74,8 @@
 </div>
 ```
 #### 效果
-<img src="example_image/progress-striped.png" alt="条纹的进度条">
+![](https://i.imgur.com/BoPnHYH.png)
+<!--<img src="example_image/progress-striped.png" alt="条纹的进度条">-->
 
 ## 动画的进度条
 #### 步骤
@@ -91,7 +93,8 @@
 </div>
 ```
 #### 效果(左侧的条纹在运动...)
-<img src="example_image/progress-anim.png" alt="动画的进度条">
+![](https://i.imgur.com/2Zk2jcY.png)
+<!--<img src="example_image/progress-anim.png" alt="动画的进度条">-->
 
 ## 堆叠的进度条
 
@@ -110,4 +113,5 @@
 </div>
 ```
 ##### 效果
-<img src="example_image/progress-push.png" alt="堆叠的进度条">
+![](https://i.imgur.com/G210FvW.png)
+<!--<img src="example_image/progress-push.png" alt="堆叠的进度条">-->

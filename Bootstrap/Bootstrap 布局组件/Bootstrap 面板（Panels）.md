@@ -16,7 +16,8 @@
 </div>
 ```
 ##### 效果
-<img src="example_image/panel-default.png" alt="基本的面板">
+![](https://i.imgur.com/vYCq2kM.png)
+<!--<img src="example_image/panel-default.png" alt="基本的面板">-->
 
 ## 面板标题
 
@@ -46,7 +47,8 @@
 </div>
 ```
 ##### 效果
-<img src="example_image/panel-title.png" alt="面板标题">
+![](https://i.imgur.com/hOHsU5D.png)
+<!--<img src="example_image/panel-title.png" alt="面板标题">-->
 
 ## 面板脚注
 
@@ -63,7 +65,8 @@
 </div>
 ```
 ##### 效果
-<img src="example_image/panel-footer.png" alt="面板脚注">
+![](https://i.imgur.com/150xqIY.png)
+<!--<img src="example_image/panel-footer.png" alt="面板脚注">-->
 
 **注意：面板脚注不会从带语境色彩的面板中继承颜色和边框，以为它不是前景中的内容**
 
@@ -87,7 +90,8 @@
 </div>
 ```
 ##### 效果
-<img src="example_image/panel-style.png" alt="带语境色彩的面板">
+![](https://i.imgur.com/lZ1yqfJ.png)
+<!--<img src="example_image/panel-style.png" alt="带语境色彩的面板">-->
 
 ## 带表格的面板
 
@@ -120,7 +124,8 @@
 </div>
 ```
 ###### 效果
-<img src="example_image/panel-table-one.png" alt="带表格的面板">
+![](https://i.imgur.com/hzrw11O.png)
+<!--<img src="example_image/panel-table-one.png" alt="带表格的面板">-->
 
 ##### 示例二
 ```html
@@ -144,7 +149,8 @@
 </div>
 ```
 ##### 效果
-<img src="example_image/panel-table-two.png" alt="带表格的面板">
+![](https://i.imgur.com/pRTx5Yo.png)
+<!--<img src="example_image/panel-table-two.png" alt="带表格的面板">-->
 
 ## 带列表组的面板
 
@@ -169,4 +175,5 @@
 </div>
 ```
 ##### 效果
-<img src="example_image/panel-list.png" alt="带列表组的面板">
+![](https://i.imgur.com/kZez6pe.png)
+<!--<img src="example_image/panel-list.png" alt="带列表组的面板">-->

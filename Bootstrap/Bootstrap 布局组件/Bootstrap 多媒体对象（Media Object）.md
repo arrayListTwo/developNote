@@ -62,7 +62,8 @@
 </div>
 ```
 ##### 效果
-<img src="example_image/media-object.png" alt=".media效果展示">
+![](https://i.imgur.com/1wbYNBw.png)
+<!--<img src="example_image/media-object.png" alt=".media效果展示">-->
 
 ## `.media-list`效果展示
 
@@ -116,4 +117,5 @@
 </ul>
 ```
 ##### 效果
-<center><img src="example_image/media-list-object.png" alt=".media-list效果展示"></center>
+![](https://i.imgur.com/gMHXFBY.png)
+<!--<center><img src="example_image/media-list-object.png" alt=".media-list效果展示"></center>-->
