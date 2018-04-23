@@ -1,6 +1,8 @@
 # Bootstrap 排版
 
 > Bootstrap 使用 Helvetica Neue、 Helvetica、 Arial 和 sans-serif 作为其默认的字体栈
+> Bootstrap 将全局 font-size 设置为 14px，line-height 设置为 1.428。这些属性直接赋予 <body> 元素和所有段落元素。
+> <p> （段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。
 
 ## 标题
 
@@ -18,7 +20,7 @@
 	<h1>我是标题1 h1. <small>我是副标题1 h1</small></h1>
 	```
 
-## 引导主体副本
+## 中心内容
 
 * 为了给**段落添加强调文本**，则可以添加 `class="lead"`，这将得到更大更粗、行高更高的文本
 
@@ -26,6 +28,9 @@
 	<h2>引导主体副本</h2>
 	<p class="lead">这是一个演示引导主体副本用法的实例</p>
 	```
+
+## 内联文本样式
+![](https://i.imgur.com/802u9hC.png)
 
 ## 强调
 
@@ -89,7 +94,7 @@
 ## 引用（Blockquote）
 
 * 您可以在任意的 HTML 文本旁使用默认的 `<blockquote>`
-* 添加一个 `<small>` 标签来标识引用的来源
+* 添加 `<footer>` 用于标明引用来源。来源的名称可以包裹进 `<cite>`标签中。
 * 使用 `class="pull-right"` 或者`class="blockquote-reverse"` 向右对齐引用
 
 #### 示例：
@@ -97,11 +102,11 @@
 	```html
 	<blockquote>
     	这是一个带有源标题的引用。
-    	<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+    	<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
 	</blockquote>
 	<blockquote class="pull-right">
     	这是一个向右对齐的引用。
-    	<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+    	<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
 	</blockquote>
 	```
 
