@@ -23,3 +23,15 @@
 
 ![](https://i.imgur.com/2zxdpO6.jpg)
 <!--<img src='example_image/code_design.jpg' alt="code显示效果">-->
+
+## 变量
+
+> 通过 `<var>` 标签标记变量
+
+![](https://i.imgur.com/DeCQduy.png)
+
+## 程序输出
+
+> 通过 `<samp>` 标签来标记程序输出的内容
+
+![](https://i.imgur.com/JRHh8O7.png)

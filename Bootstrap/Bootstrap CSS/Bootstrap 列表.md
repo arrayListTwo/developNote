@@ -16,3 +16,14 @@
 * 通过设置 `display: inline-block`; 并**添加少量的内补（`padding`）**，将所有元素放置于同一行。
 
 ![](https://i.imgur.com/ngLsGC4.png)
+
+## 描述
+
+> 带有描述的短语列表
+
+![](https://i.imgur.com/Y7nv0UJ.png)
+
+## 水平排列的描述
+
+* `.dl-horizontal` 可以让 `<dl>` 内的短语及其描述排在一行。**开始是像 <dl> 的默认样式堆叠在一起，随着导航条逐渐展开而排列在一行。**
+	* 在较窄的视口（`viewport`）内，**列表将变为默认堆叠排列的布局方式**。
