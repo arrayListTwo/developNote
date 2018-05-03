@@ -47,3 +47,4 @@ $.getJSON(url, [data], [callback])
 	}]
 	```
 * 最终效果
+![](https://i.imgur.com/CkKnLEZ.png)
