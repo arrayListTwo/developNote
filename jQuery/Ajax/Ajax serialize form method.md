@@ -4,7 +4,7 @@
 
 * 使用`serialize()`方法可以**将表单中有`name`属性的元素值进行序列化**，生成标准的`URL`编码文本字符串，直接可用于`ajax`请求，调用格式如下：
 	```html
-	$.(selector).serialize();
+	$(selector).serialize();
 	```
 	* **`selector`**：一个或多个表单中的元素或表单元素本身
 
