@@ -1,4 +1,4 @@
-# jQuery style 样式篇 - 选择器 selector (ID Class Element *)
+# jQuery style 样式篇 - 选择器 selector (ID Class Element)
 
 > jQuery提供了一系列的选择器帮助开发者达到这一目的，让开发者可以更少的处理复杂选择过程与性能优化，更多专注于业务逻辑的编写
 
@@ -6,12 +6,12 @@
 
 > 元素的`ID`属性
 
-> ID是唯一的，每个ID值在一个页面中只能使用一次
+> **ID是唯一的，每个ID值在一个页面中只能使用一次**
 
 ```js
 $("#ID"); // jQuery对象
 ```
-**id选择器**是最基本的选择器，`jQuery`内部使用`JavaScript`函数`document.getElementById()`来处理ID的获取
+**id选择器**是最基本的选择器，`jQuery`内部使用`JavaScript`函数`document.getElementById()`来处理ID的获取，**原生语法的支持总是非常高效**
 
 ## 类选择器 Class
 
