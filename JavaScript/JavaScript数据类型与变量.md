@@ -41,3 +41,39 @@ Infinity; // Infinity表示无限大，当数值超过了JavaScript的Number所�
 		* 浮点数在运算过程中会产生误差，因为计算机无法精确表示无限循环小数。
 		* 要比较两个浮点数是否相等，只能计算它们之差的绝对值，看是否小于某个阈值
 		* **浮点数相等比较：**`Math.abs(1 / 3 - (1 - 2 / 3)) < 0.0000001; // true`
+* JavaScript把`null`、`undefined`、`0`，`NaN`、和空字符串`''`视为false，其他一概视为`true`
+
+## 数组
+
+> 数组是一组按顺序排列的集合，集合的每个值称为元素
+
+## 对象
+
+> JavaScript对象是一组由 键(字符串类型)-值(任意数据类型) 组成的无序集合
+
+```JavaScript
+var person = {
+    name: 'Bob',
+    age: 20,
+    tags: ['js', 'web', 'mobile'],
+    city: 'Beijing',
+    hasCar: true,
+    zipcode: null
+};
+```
+
+## 变量
+
+> js是动态语言，变量是弱类型的，在申明变量之后，可以随时更改变量的值，即使值的类型发生改变
+
+* **注意：**如果一个变量没有通过`var`申明就被使用，那么该变量就自动被申明为全局变量
+
+* 使用`strict`模式，强制使用`var`申明变量，不然报错
+	* 在js代码的第一行写上
+	```JavaScript
+	'use strict';
+	```
+
+
+
+
