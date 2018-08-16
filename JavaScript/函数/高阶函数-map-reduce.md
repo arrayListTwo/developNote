@@ -30,7 +30,7 @@ var results = arr.map(pow); // [1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 ```JavaScript
 var arr = [1, 3, 5, 7, 9];
-arr.reduce(function (x, y) {
+var result = arr.reduce(function (x, y) {
     return x * 10 + y;
-}); // 13579
+}); // result 13579
 ```
