@@ -6,6 +6,8 @@
 
 > `JSON`定死了字符集必须是`UTF-8`
 
+> `JSON`的字符串规定必须用双引号`""`，`Object`的键也必须用双引号`""`
+
 ## `JSON`中数据类型
 
 * `number` : 和`JavaScript`中的`number`完全一致
