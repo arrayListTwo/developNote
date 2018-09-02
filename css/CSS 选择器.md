@@ -151,8 +151,8 @@ a[href="http://www.w3school.com.cn/"][title="W3School"] {color: red;}
 > 需要使用 **波浪号 ~**
 
 ```css
-<!--title值为"importment small"，可应用此样式； 值为"important"，也可应用此样式-->
-<!--title值为"importments small", 不可应用此样式-->
+<!--title值为"important small"，可应用此样式； 值为"important"，也可应用此样式-->
+<!--title值为"importants small", 不可应用此样式-->
 p[title~="important"] {color: red;}
 ```
 
