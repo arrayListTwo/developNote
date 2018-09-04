@@ -12,9 +12,32 @@
 * 通过**jQuery的selector**得到的是一个**jQuery对象（类数组对象）**
 	* 通过jQuery处理DOM操作，可以让开发者更专注于业务逻辑的开发
 
+### `$`符号
+
+* `$`是著名的`jQuery`符号。实际上，`jQuery`把所有功能都封装在一个全局变量`jQuery`中，而`$`也是一个合法的变量名，它是变量`jQuery`的别名：
+
+```JavaScript
+window.jQuery; // jQuery(selector, context)
+window.$; // jQuery(selector, context)
+$ === jQuery; // true
+typeof($); // 'function'
+```
+
+* `$`本质上就是一个函数，但是函数也是对象，于是`$`除了可以直接调用外，也可以有很多其他属性
+
+* `jQuery`交出`$`的使用权
+
+```JavaScript
+$; // jQuery(selector, context)
+// 释放jQuery的$符号使用权
+jQuery.noConflict();
+$; // undefined
+jQuery; // jQuery(selector, context)
+```
+
 ### jQuery对象转换成DOM对象
 
-> jQuery是一个类数组对象，而DOM对象就是一个单独的DOM元素
+> jQuery是一个**类数组对象**，它的每个元素都是一个引用了DOM节点的对象；而DOM对象就是一个单独的DOM元素
 
 > jQuery库本质上还是JavaScript代码，它只是对JavaScript语言进行包装处理，为的是提供更好更方便快捷的DOM处理与开发中经常使用的功能
 
