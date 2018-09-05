@@ -24,6 +24,13 @@
 
 * **`true`**和**`false`**属性使用**`prop()`**
 
+## `is()`方法判断是否含有属性
+
+```JavaScript
+$radio.is(':checked'); // true / false
+$selected.is(':selected'); // true / false
+```
+
 ## 官方推荐使用attr和prop的情况
 
 ![](https://i.imgur.com/zqiXDv7.png)
