@@ -11,7 +11,7 @@
 
 ```JavaScript
 // 升序
-ar arr = [10, 20, 1, 2];
+var arr = [10, 20, 1, 2];
 arr.sort(function (x, y) {
     if (x < y) {
         return 1;
