@@ -51,7 +51,8 @@ jQuery; // jQuery(selector, context)
 	var dom = $jquery[0];
 	```
 * 利用**jQuery自带的get()方法**
-
+	* 从前向后找，`index`从`0`开始
+	* 从后往前找，`index`从`-1`开始
 	jQuery对象自身提供了一个get()方法，允许我们直接访问jQuery对象中共的相关DOM节点，get方法中需提供一个元素的索引
 
 	```js
@@ -71,3 +72,27 @@ jQuery; // jQuery(selector, context)
 	// dom 参数是一个DOM对象
 	var $jQuery = $(dom);
 	```
+
+### 根据DOM元素获取其位置`index()`方法
+
+* `.index()`：`jQuery`对象中第一个元素相对于它同辈元素的位置
+
+* `.index(ele)`：如果在一组元素上调用`.index(ele)`，并且参数是一个DOM元素或者jQuery对象，`.index(ele)`返回值就是传入的元素相对于原先集合的位置
+
+* `.index(selector)`：如果参数是一个选择器，`.index(selector)`返回值就是原先元素相对于选择器匹配元素的位置
+
+* 如果找不到匹配的元素，则`.index()`返回`-1`
+
+```JavaScript
+// HTMl 结构
+<ul>
+    <a></a>
+    <li id="test1">1</li>
+    <li id="test2">2</li>
+    <li id="test3">3</li>
+</ul>
+// index方法
+$("li").index(); // 同辈元素前面有一个元素，即结果为：1
+$("li").index(document.getElementById("test2")) //相对于集合元素位置，结果：1
+$("li").index($("#test2"))  //结果:1
+```

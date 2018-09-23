@@ -13,14 +13,14 @@
 	* 前台JS代码
 	```js
 	$("#get").on('click', function() {
-	var $this = $(this);
-	$.get("/springmvctest/static_resource/new_json.json", 	function(data){
-			$this.attr("disabled", true);
-			$.each(data, function(index, sport) {
-			console.log(index + " : " + sport["name"]);
-			$("ul").append("<li>" + sport["name"] + "</li>");
+		var $this = $(this);
+		$.get("/springmvctest/static_resource/new_json.json", 	function(data){
+				$this.attr("disabled", true);
+				$.each(data, function(index, sport) {
+					console.log(index + " : " + sport["name"]);
+					$("ul").append("<li>" + sport["name"] + "</li>");
+				});
 			});
-		});
 	});
 	```
 	* 后台数据

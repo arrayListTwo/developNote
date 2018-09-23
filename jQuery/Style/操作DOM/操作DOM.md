@@ -110,6 +110,8 @@ div.attr('name'); // undefined
 
 * 对于表单元素，`jQuery`对象统一提供`val()`方法获取和设置对应的value属性
 
+* `.trim()`去除字符串两端的空白字符
+
 ```JavaScript
 /*
     <input id="test-input" name="email" value="">
