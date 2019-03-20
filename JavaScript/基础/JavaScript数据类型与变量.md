@@ -5,7 +5,9 @@
 * JavaScript不区分整数和浮点数，统一用`Number`表示
 
 ```javaScript
-123； // 整数  
+123； // 整数
+0.456;  // 浮点数
+1.2345e3; // 科学计数法表示1.2345×1000,等同于1234.5
 -99; // 负数  
 NaN; // NaN表示Not a Number，当无法计算结果时，用NaN表示  
 Infinity; // Infinity表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就表示为Infinity
@@ -45,7 +47,15 @@ Infinity; // Infinity表示无限大，当数值超过了JavaScript的Number所�
 
 ## 数组
 
-> 数组是一组按顺序排列的集合，集合的每个值称为元素
+> 数组是一组按顺序排列的集合，集合的每个值称为元素。JavaScript的数组可以包含任意数据类型
+
+* `[]` 表示，**建议使用**
+
+	`[1, 2, 3, 15, 'Hello', null, true]`
+
+* `Array()`函数
+
+	`new Array(1, 2, 3)`; // 创建了数组 [1, 2, 3]
 
 ## 对象
 
