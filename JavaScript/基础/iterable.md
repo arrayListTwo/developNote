@@ -15,13 +15,13 @@ var a = ['A', 'B', 'C'];
 var s = new Set(['A', 'B', 'C']);
 var m = new Map([[1, 'x'], [2, 'y'], [3, 'z']]);
 for (var x of a) { // 遍历Array
-    console.log(x);
+    console.log(x); // A  B  C
 }
 for (var x of s) { // 遍历Set
-    console.log(x);
+    console.log(x);  // A   B   C
 }
 for (var x of m) { // 遍历Map
-    console.log(x[0] + '=' + x[1]);
+    console.log(x[0] + '=' + x[1]); // 1=x  2=y  3=z
 }
 ```
 
@@ -46,7 +46,7 @@ for (var x of m) { // 遍历Map
 	}
 	```
 
-## `iterable`内置的`forEach`方法，`ES5.1`引入
+## `iterable`内置的`forEach`方法，`ES5.1`引入，建议使用
 
 > `forEach`方法接收一个函数，每次迭代到自动回调该函数
 
@@ -72,17 +72,17 @@ arr.forEach(function (element, index, array) {
 
 * 回调函数的前两个参数都是元素本身
 
-```JavaScript
-var s = new Set(['A', 'B', 'C']);
-s.forEach(function (element, sameElement, set) {
-    console.log(element + " : " + sameElement);
-});
-	/*
-		A : A
-		B : B
-		C : C
-	*/
-```
+	```JavaScript
+	var s = new Set(['A', 'B', 'C']);
+	s.forEach(function (element, sameElement, set) {
+	    console.log(element + " : " + sameElement);
+	});
+		/*
+			A : A
+			B : B
+			C : C
+		*/
+	```
 
 #### `Map`的回调函数参数依次为`value`、`key`和`map`本身：
 
