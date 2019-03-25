@@ -41,10 +41,10 @@ fib(10);	// [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
 * `console.log(fib(5))`
 
-```JavaScript
-// 直接调用`generator`，会创建一个`generator`对象，并没有执行它
-fib {[[GeneratorStatus]]: "suspended", [[GeneratorReceiver]]: Window}
-```
+	```JavaScript
+	// 直接调用`generator`，会创建一个`generator`对象，并没有执行它
+	fib {[[GeneratorStatus]]: "suspended", [[GeneratorReceiver]]: Window}
+	```
 
 #### 第一种：`next()`方法：
 
@@ -53,15 +53,15 @@ fib {[[GeneratorStatus]]: "suspended", [[GeneratorReceiver]]: Window}
 * 返回的`value`就是`yield`的返回值
 * `done`表示这个`generator`是否已经执行结束。如果`done`为`true`，则`value`就是`return`的返回值
 
-```JavaScript
-var f = fib(5);
-f.next(); // {value: 0, done: false}
-f.next(); // {value: 1, done: false}
-f.next(); // {value: 1, done: false}
-f.next(); // {value: 2, done: false}
-f.next(); // {value: 3, done: false}
-f.next(); // {value: undefined, done: true}
-```
+	```JavaScript
+	var f = fib(5);
+	f.next(); // {value: 0, done: false}
+	f.next(); // {value: 1, done: false}
+	f.next(); // {value: 1, done: false}
+	f.next(); // {value: 2, done: false}
+	f.next(); // {value: 3, done: false}
+	f.next(); // {value: undefined, done: true}
+	```
 
 #### 第二种：`for ... of`循环
 
