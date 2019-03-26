@@ -25,25 +25,25 @@ Date.now(); // 时间戳，老版本IE中不存在此方法
 
 * 直接传入`年`、`月`等信息，返回`Date`对象
 
-```JavaScript
-var d = new Date(2015, 5, 19, 20, 15, 30, 123); // 月份范围是0~11
-d; // Fri Jun 19 2015 20:15:30 GMT+0800 (CST)
-```
+	```JavaScript
+	var d = new Date(2015, 5, 19, 20, 15, 30, 123); // 月份范围是0~11
+	d; // Fri Jun 19 2015 20:15:30 GMT+0800 (CST)
+	```
 
 * 传入`ISO 8601`格式的字符串，返回**时间戳**
 
-```JavaScript
-var d = Date.parse('2015-06-24T19:49:22.875+08:00');
-d; // 时间戳，1435146562875
-```
+	```JavaScript
+	var d = Date.parse('2015-06-24T19:49:22.875+08:00');
+	d; // 时间戳，1435146562875
+	```
 
 * 传入**时间戳**，返回`Date`对象
 
-```JavaScript
-var d = new Date(1435146562875);
-d; // Wed Jun 24 2015 19:49:22 GMT+0800 (CST)
-d.getMonth(); // 5
-```
+	```JavaScript
+	var d = new Date(1435146562875);
+	d; // Wed Jun 24 2015 19:49:22 GMT+0800 (CST)
+	d.getMonth(); // 5
+	```
 
 ## 时间戳
 
@@ -53,14 +53,14 @@ d.getMonth(); // 5
 
 * 显示本地时间
 
-```JavaScript
-var now = new Date(1535288480471);
-now.toLocaleString(); // "2018/8/26 下午9:01:20"
-```
+	```JavaScript
+	var now = new Date(1535288480471);
+	now.toLocaleString(); // "2018/8/26 下午9:01:20"
+	```
 
 * 显示`UTC`时间
 
-```JavaScript
-var now = new Date(1535288480471);
-now.toUTCString(); // "Sun, 26 Aug 2018 13:01:20 GMT"
-```
+	```JavaScript
+	var now = new Date(1535288480471);
+	now.toUTCString(); // "Sun, 26 Aug 2018 13:01:20 GMT"
+	```
