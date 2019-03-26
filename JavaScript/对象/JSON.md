@@ -11,10 +11,15 @@
 ## `JSON`中数据类型
 
 * `number` : 和`JavaScript`中的`number`完全一致
+
 * `boolean` : `JavaScript`的`true` 或 `false`
+
 * `string` : `JavaScript`的 `string`
+
 * `null` ： `JavaScript` 的 `null`
+
 * `array` ： `JavaScript` 的 `Array` ，表示方式 - `[]`
+
 * `object` : `JavaScript` 的 `{...}` 的表示方式
 
 ## `JavaScript`中的序列化和反序列化
