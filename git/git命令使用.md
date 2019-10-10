@@ -85,18 +85,27 @@
 
 > 在Git中，用HEAD表示当前版本，也就是最新的提交
 
-* `HEAD`指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令`git reset --hard commit_id`
+* `HEAD`指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭
+	
+	* 使用命令`git reset --hard commit_id` ，删除工作空间改动代码，撤销`commit`撤销`git add .` 注意完成这个操作后，就恢复到了commit_id状态。
+	
+	*  使用命令`git reset --soft commit_id` ，不删除工作空间改动代码，撤销`commit`，不撤销`git add .` ，，**此命令可以实现撤销一次commit操作**
+
+	* 使用命令`git reset --mixed commit_id` 或 `git reset commit_id` ，不删除工作空间改动代码，撤销`commit`，并且撤销`git add .` 操作
 
 * 穿梭前，用`git log`可以查看提交历史，以便确定要回退到哪个版本
 
 * 要重返未来，用`git reflog`查看命令历史，以便确定要回到未来的哪个版本
 
-## git误删除文件操作
+## git删除文件
 
 * 确实要删除文件
-	那就用命令`git rm`删掉，并且`git commit`
-* 误删除文件
-	 `git checkout -- file`:版本库里的版本替换工作区的版本，会**丢失最近一次提交后你修改的内容**。
+
+	* `git rm -f filename` 或者 `git rm -rf dirname` ，同时删除工作区和暂存区的文件
+	
+	* `git rm --cached filename`， 删除暂存区文件，不删除工作区文件
+
+	* 代码已经`commit`，撤销`commit`，使用`git reset --soft HEAD^`，不删除工作空间改动代码，撤销`commit`，不撤销`add`
 
 ## Github远程仓库
 
