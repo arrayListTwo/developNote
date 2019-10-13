@@ -89,7 +89,7 @@
 	
 	* 使用命令`git reset --hard commit_id` ，删除工作空间改动代码，撤销`commit`撤销`git add .` 注意完成这个操作后，就恢复到了commit_id状态。
 	
-	*  使用命令`git reset --soft commit_id` ，不删除工作空间改动代码，撤销`commit`，不撤销`git add .` ，，**此命令可以实现撤销一次commit操作**
+	*  使用命令`git reset --soft commit_id` ，不删除工作空间改动代码，撤销`commit`，不撤销`git add .` ，**此命令可以实现撤销一次commit操作**
 
 	* 使用命令`git reset --mixed commit_id` 或 `git reset commit_id` ，不删除工作空间改动代码，撤销`commit`，并且撤销`git add .` 操作
 
