@@ -26,7 +26,9 @@
 
 	```JavaScript
 	var arr = [1, 2, 3]
+
 	---------方法-----------
+
 		forEach // 遍历所有元素
 	arr.forEach(function(item, index){
 		// 遍历数组的所有元素
@@ -74,6 +76,20 @@
 		}
 	})
 	console.log(arr2) // [2, 3]
+	
+		findIndex // 返回第一个符合条件的数组成员的Index，没有则返回 -1
+		find     // 第一个符合条件的数组成员，没有则返回 undefined
+		// 第二个参数可以指定 this
+	let res = arr.findIndex(function(item, index, arr){
+		return item === this.num
+	}, {num: 2}) // 1
+
+		reduce // 将输入合成一个值,数组中的每个值(从左至右) 开始合并，最终为一个值
+		// 第二个参数指定第一个参数的默认值
+	var sumValue = arr.reduce(function(sum,number){
+	  return sum + number;
+	},0);//sum初始值为0
+	console.log(sumValue);
 	```
 
 * 对象API
