@@ -15,6 +15,28 @@
 	}
 	```
 
+* 阻止事件默认行为
+
+	```JavaScript
+	// 阻止默认行为
+	event.preventDefault()
+	// 输入框最多只能输入六个字符
+	inputText.onkeydown = function(ev){
+		ev = ev || window.event
+		let val = this.value.trim() // 存在不兼容
+		// this.value = this.value.replace(/^ +| +$/g, '') // 兼容写法
+		let len = val.length
+		if(len >= 6){
+			this.value = val.substr(0, 6)
+			// 阻止默认行为去除特殊按键(DELETE\BACK-SPACE\方向键)
+			let code = ev.which || ev.keyCode;
+			if(!/^(46|8|37|38|39|40)$/.test(code)){
+				ev.preventDefault()
+			}
+		}
+	}
+	```
+
 * 事件冒泡
 
 	```JavaScript
