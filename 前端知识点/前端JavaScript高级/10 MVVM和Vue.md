@@ -1,11 +1,5 @@
 # MVVM 框架或者设计模式概念
 
-* 如何理解 `MVVM`
-
-* 如何实现 `MVVM`
-
-* 是否解读过 `vue` 的源码
-
 * 说一下使用 `jQuery` 和使用框架的区别
 
 	* 数据 和 视图 的分离，解耦（开放封闭原则）
@@ -34,7 +28,7 @@
 
 	* 什么是 响应式
 
-		* 修改 `data` 属性之后， `vue` 立刻监听到
+		* 修改 `data` 属性之后， `vue` 立刻监听到，`vue` 修改属性是异步（是在 `render` 函数中异步）
 
 		* `data` 属性被代理到 `vm` 上
 
@@ -100,11 +94,11 @@
 
 			* 转换为 `html` 渲染页面，必须用 `JS` 才能实现
 
-			* 因此，模板最重要转换成一个 `JS` 函数（`render`函数）
+			* 因此，模板最终转换成一个 `JS` 函数（`render`函数）
 
 	* `render` 函数
 
-		* `with` 用法（**个人代码，不建议使用**）
+		* `with` 用法（**工作中，个人代码，不建议使用**）
 
 		```JavaScript
 		var obj = {
@@ -125,8 +119,142 @@
 
 		* 模板中所有信息都包含在 `render` 函数中
 
+		* 模板中用到的 `data` 中的属性，都变成了 `JS` 变量
+
+		* 模板中的 `v-model`、`v-for`、`v-on` 都变成了 `JS` 逻辑
+
+		* `render` 函数返回 `vnode`
+
 		* `this` 即 `vm`
+
+		```JavaScript
+		/* HTML */
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+		  <meta charset="UTF-8">
+		  <title>TODO-LIST VUE</title>
+		  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+		</head>
+		<body>
+
+		/* 模板 */
+		// ------------------------------
+		<div id="app">
+		  <div>
+		    <input type="text" v-model="title">
+		    <button @click="add">Submit</button>
+		  </div>
+		  <div>
+		    <ul>
+		      <li v-for="item in list">
+		        {{item}}
+		      </li>
+		    </ul>
+		  </div>
+		</div>
+		// ------------------------------
+
+		<script>
+		  var vm = new Vue({
+		    el: '#app',
+		    data: {
+		      title: '',
+		      list: []
+		    },
+		    methods: {
+		      add: function () {
+		        this.list.push(this.title)
+		        this.title = ''
+		      }
+		    }
+		  })
+		</script>
+		</body>
+		</html>
+
+		/* 模板生成的render函数 */
+
+		with (this) { // this 就是 vm
+			return _c('div',
+			    { attrs: { "id": "app" } },
+			    [
+			      _c('div',
+			        [
+			          _c('input',
+			            {
+			              directives: [{
+			              name: "model",
+			              rawName: "v-model",
+			              value: (title),
+			              expression: "title"
+			              }],
+			              attrs: { "type": "text" },
+			              domProps: { "value": (title) },
+			              on: {"input": function ($event) {
+			                if ($event.target.composing) return
+			                  title = $event.target.value
+			                }
+			              }
+			            }
+			          ),
+			          _v(" "),
+			          _c('button',
+			            {on: { "click": add } },
+			            [_v("Submit")])
+			        ]
+			      ),
+			      _v(" "),
+			      _c('div',
+			        [
+			          _c('ul', _l((list), function (item) {
+			                return _c('li', [_v("\n        " + _s(item) + "\n      ")])
+			              }
+			            )
+			          )
+			        ]
+			      )
+			    ]
+			)
+		}
+
+		```
 
 	* `render` 函数与 `vdom`
 
+		* `vm._c` 其实就相当于 `snabbdom` 中的 `h` 函数
+
+		* `render` 函数执行之后，返回的是 `vnode`
+		
+		```JavaScript
+		// updateConponent 中实现了 vdom 的 patch
+
+		// 页面首次渲染执行 updateComponent
+
+		// data 中每次修改属性，执行 updateComponent
+
+		function updateComponent(){
+			// vm._render() 即 根据模板生成的 render 函数
+			vm._update(vm._render())
+		}
+
+		vm._update(vnode){
+			const prevVnode = vm._vnode
+			vm._vnode = vnode
+			if (!prevVnode){
+				vm.$el = vm.__patch__(vm.$el, vnode)
+			} else {
+				vm.$el = vm.__patch__(preVnode, vnode)
+			}
+		}
+		```
+
 * `vue` 的整个实现流程
+
+	* 解析模板成 `render` 函数
+
+	* 响应式开始监听
+
+	* 首次渲染，显示页面，且绑定依赖(`getter` 和 `setter`)
+
+	* `data` 属性变化，触发 `re-render`
