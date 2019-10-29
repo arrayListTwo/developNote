@@ -12,7 +12,7 @@
 
 * `private`
 
-* `no-cache`
+* `no-cache`：强制确认缓存
 
 ### 到期
 
@@ -30,7 +30,7 @@
 
 ### 其他
 
-* `no-store`
+* `no-store` ：缓存中不得存储任何关于客户端请求和服务端响应的内容
 
 * `no-transform`
 
@@ -52,6 +52,10 @@
 
 	* 对比资源的签名判断是否使用缓存
 
+* [HTTP 缓存](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Caching_FAQ "HTTP 缓存")
+
+* [彻底弄懂HTTP缓存机制及原理](https://www.cnblogs.com/chenqf/p/6386163.html "彻底弄懂HTTP缓存机制及原理")
+
 ## Cookie
 
 * 服务器端，通过 `Set-Cookie` 设置
@@ -67,3 +71,4 @@
 	* `Secure` 只在 `https` 的时候发送
 
 	* `HttpOnly` 无法通过 `document.cookie` 访问
+
