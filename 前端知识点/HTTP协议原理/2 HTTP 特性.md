@@ -72,3 +72,51 @@
 
 	* `HttpOnly` 无法通过 `document.cookie` 访问
 
+	* `domain`：设置为 **.一级域名**，则一级域名和所有的二级域名共享此 `Cookie`
+
+## HTTP 长连接
+
+* `Connection` 设置为 `keep-alive`
+
+## 数据协商
+
+### 分类
+
+* 请求
+
+	* `Accept`
+
+	* `Accept-Encoding`
+
+	* `Accept-Language`
+
+	* `User-Agent`
+
+* 返回
+
+	* `Content-Type`
+
+	* `Content-Encoding`
+
+	* `Content-Language`
+
+## Redirect
+
+* `302`：暂时移动资源地址
+
+* `301`：永久移动资源地址（**慎重操作**）
+
+## 内容安全策略（`Content-Security-Policy`）
+
+* 限制资源获取
+
+* 报告资源获取越权
+
+### 限制方式
+
+* 响应头 `Content-Security-Policy` 和 `Content-Security-Policy-Report-Only`
+
+* `default-src` 限制全局
+
+* 指定资源类型来实现限制
+
