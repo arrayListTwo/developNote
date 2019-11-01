@@ -197,3 +197,35 @@
 
 * `git push origin master`：推送主分支，master分支是主分支，因此要时刻与远程同步
 * `git push origin dev`：推送开发分支
+
+## 版本标记
+
+> `Git` 中使用 `tag` 进行版本标记
+
+> 通过 `Git` 的 `tag` 功能，对生产分支中要发布的提交进行标记
+
+* `Git` 增加 `tag`
+
+```git
+$ git tag tagName -m 'tag description'
+```
+
+* 删除 `tag`
+
+```git
+$ git tag -d tagName
+$ git push origin :refs/tags/tagName
+```
+
+* 查看 `tag`
+
+```git
+git show tagName
+```
+
+* 将 `tag` 推到远程仓库
+
+```git
+$ git push origin tagName # 推送单个 tag
+$ git push origin --tags  # 推送所有的 tag 
+```
