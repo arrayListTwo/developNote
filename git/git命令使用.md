@@ -197,6 +197,12 @@
 
 * `git push origin master`：推送主分支，master分支是主分支，因此要时刻与远程同步
 * `git push origin dev`：推送开发分支
+* 从远程拉取新创建的分支，并在本地仓库显示
+
+	```
+	git fetch origin dev   // 拉取远程分支
+	git checkout -b dev origin/dev  // 创建远程分支并切换到该分支
+	```
 
 ## 版本标记
 
