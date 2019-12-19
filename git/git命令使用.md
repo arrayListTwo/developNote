@@ -204,6 +204,13 @@
 	git checkout -b dev origin/dev  // 创建远程分支并切换到该分支
 	```
 
+* 删除远程分支
+
+	```
+	git branch -r -d origin/branch-name
+	git push origin :branch-name
+	```
+
 ## 版本标记
 
 > `Git` 中使用 `tag` 进行版本标记
