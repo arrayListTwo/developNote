@@ -8,6 +8,8 @@
 
 * 说一下对 `MVVM` 的理解
 
+	* [阮一峰 - MVC，MVP 和 MVVM 的图示](https://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)
+
 	* `MVC`： `Model` 数据； `View` 视图、界面； `Controller` 控制器、逻辑处理，主要应用于后端
 
 	<img src='./mvc.jpg'>
