@@ -55,7 +55,67 @@
 | HH | 00-23 | 小时，两位数 |
 | h | 1-12 | 小时，12小时制 |
 | hh | 01-12 | 小时，12小时制，两位数 |
- 
+| m | 0-59 | 分钟 |
+| mm | 00-59 | 分钟，两位数 |
+| s | 0-59 | 秒 |
+| ss | 00-59 | 秒，两位数 |
+| S | 0-9 | 毫秒，一位数 |
+| SS | 00-99 | 毫秒，两位数 |
+| SSS | 000-999 | 毫秒，三位数 |
+
+### Unix 时间戳（毫秒）
+
+* 解析传入的一个Unix时间戳（13位数字，从1970年1月1日UTC午夜开始所经过的毫秒数）创建一个 **Day.js** 对象
+
+```JavaScript
+dayjs(1318781876406)
+```
+
+**注：** 传入的参数必须是 **number**
+
+### Unix 时间戳 （秒）
+
+* 解析传入的一个Unix时间戳（10位数字，从1970年1月1日Utc午夜开始所经过的秒数）创建一个 **Day.js** 对象
+
+```JavaScript
+dayjs.unix(1318781876)
+```
+
+* 这个方法是用 `dayjs(timestamp * 1000)` 实现的，所有传入时间戳里的小数点后面的秒也会被解析
+
+```JavaScript
+dayjs.unix(1318781876.721)
+```
+
+### Date 对象
+
+* 使用原生 JavaScript `Date` 对象创建一个 **Day.js** 对象
+
+```JavaScript
+let day = dayjs(new Date(2020, 10, 18))
+```
+
+* 这将克隆 `Date` 对象。对传入的 `Date` 对象做进一步更改不会影响 `Day.js` 对象，反之亦然
+
+### UTC
+
+* 默认情况下，**Day.js** 会把时间解析成本地时间
+
+* 如果想使用 **UTC** 时间，先配置 **UTC** 插件
+
+```JavaScript
+import dayjs from 'dayjs'
+var utc = require('dayjs/plugin/utc')
+dayjs.extend(utc)
+```
+
+* 调用 `dayjs.utc()`，在 **UTC** 模式下，所有显示方法将会显示 **UTC** 时间而非本地时间
+
+```JavaScript
+dayjs().format('YYYY-MM-DD HH:mm:ss') // 2020-10-28 17:55:46  东八区时间
+dayjs.utc().format('YYYY-MM-DD HH:mm:ss') // 2020-10-28 09:55:46  零时区时间
+```
+
  ## API
  
  * `dayjs().isValid()`: 是否是合法的Day.js对象实例
