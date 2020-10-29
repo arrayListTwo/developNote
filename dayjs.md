@@ -347,4 +347,61 @@ dayjs.min(dayjs('2020-10-23'), dayjs('2018-01-01'), dayjs('2019-01-01')).format(
 dayjs.min([dayjs('2020-10-23'), dayjs('2018-01-01'), dayjs('2019-01-01')]).format('YYYY-MM-DD') // 2018-01-01 => 数组参数
 ```
 
+## 操作
+
+> `Day.js` 支持链式调用
+
+### Add
+
+> 返回增加一定时间的复制的 `Day.js` 对象
+
+```JavaScript
+dayjs().add(7, 'day')
+```
+
+* 支持的单位列表。各个传入的单位对大小写不敏感，支持缩写和复数
+
+| 单位 | 缩写 | 详情 |
+| :--- | :---: | :-- |
+| day | d | 天数 |
+| week | w | Week of Year |
+| month | M | 月份 (一月 0， 十二月 11) |
+| quarter | Q | 季度（依赖 `QuarterOfYear` 插件） |
+| year | y | Year |
+| hour | h | Hour |
+| minute | m | Minute |
+| second | s | Second |
+| millisecond | ms | Millisecond |
+
+### Subtract
+
+> 返回减去一定时间的复制的 `Day.js` 对象
+
+```JavaScript
+dayjs().subtract(7, 'year')
+```
+
+### Start of Time / End of Time
+
+> 返回复制的 `Day.js` 对象，并设置到一个时间的开始 / 末尾
+
+```JavaScript
+dayjs().startOf('year')
+dayjs().endOf('year')
+```
+
+* 支持的单位列表。各个传入的单位对大小写不敏感，支持缩写和复数。
+
+| 单位 | 缩写 | 详情 |
+| :--- | :--: | :-- |
+| year | y | 今年一月1日上午00:00 |
+| quarter | Q | 本季度第一个月1日上午00:00（依赖 `QuarterOfYear` 插件） |
+| month | M | 本月1日上午 00:00 |
+| week | w | 本周的第一天上午 00:00 |
+| date | D| 当天 00:00 |
+| day | d | 当天 00:00 |
+| hour | h | 当前时间，0分、0秒、0毫秒 |
+| minute | m | 当前时间，0秒、0毫秒 |
+| second | d | 当前时间，0毫秒 |
+
 
